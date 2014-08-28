@@ -1,0 +1,14 @@
+<h1><%= @post.title %></h1>
+<h3>Tags:</h3>
+<ul>
+  <% @post.tags.each do |tag| %>
+    <li><%= tag.name %></li>
+  <% end %>
+</ul>
+<p><%= @post.body %></p>
+<h3>Comments:</h3>
+<ul>
+  <% @post.comments.each do |comment| %>
+    <li><%= comment.body %></li>
+  <% end %>
+</ul>
