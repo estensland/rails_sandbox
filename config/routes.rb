@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root "posts#index"
+  root "site#index"
   get "posts/" => "posts#index"
   get "posts/:id" => "posts#show"
 

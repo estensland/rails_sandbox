@@ -14,3 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+$(document).on('click', '.fs-link', function(e){
+  e.preventDefault()
+})
+
+$('#flying-switch').html('')
