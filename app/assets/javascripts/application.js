@@ -17,7 +17,14 @@
 
 
 $(document).on('click', '.fs-link', function(e){
-  e.preventDefault()
-})
+  var clicked = this;
+  var href = $(clicked).attr('href');
 
-$('#flying-switch').html('')
+  if (href.match(/#\/_\//)) {
+    var params = href.split('#/_/')[1];
+    console.log(params)
+    $.post('/fs/', {fs: params}, function(partial){
+      $('#flying-switch').html(partial);
+    });
+  }
+});
