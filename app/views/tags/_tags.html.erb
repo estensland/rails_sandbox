@@ -1,0 +1,7 @@
+<h1>Tags</h1>
+
+<% @tags.each do |tag| %>
+  <a class='fs-link' href="/#/_/tags/<%=tag.id%>"><h3><%= tag.name %></h3></a>
+  <br>
+<% end %>
+

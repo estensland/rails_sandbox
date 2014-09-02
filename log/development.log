@@ -5043,3 +5043,1263 @@ Processing by FlyingSwitchController#async as */*
   [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1  [["post_id", 1]]
   Rendered posts/_post.html.erb (21.4ms)
 Completed 200 OK in 29ms (Views: 21.2ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 07:31:09 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (62.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 210ms (Views: 167.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 07:31:10 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 07:31:10 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 07:31:10 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 07:31:10 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 07:31:10 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:31:12 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts"}
+  [1m[35mPost Load (41.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_posts.html.erb (55.8ms)
+Completed 200 OK in 117ms (Views: 25.8ms | ActiveRecord: 49.0ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:31:14 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/1"}
+  [1m[36mPost Load (53.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (25.1ms)[0m  SELECT "tags".* FROM "tags"  WHERE "tags"."post_id" = $1  [["post_id", 1]]
+  [1m[36mComment Load (17.7ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/_post.html.erb (152.4ms)
+Completed 200 OK in 215ms (Views: 108.8ms | ActiveRecord: 101.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 07:33:15 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 07:33:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 07:33:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 07:33:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 07:33:15 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 07:33:15 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:33:16 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags"}
+  Rendered tags/_tags.html.erb (33.0ms)
+Completed 500 Internal Server Error in 40ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>Posts</h1>
+    2: 
+    3: <% @posts.each do |post| %>
+    4:   <a class='fs-link' href="/#/_/posts/<%=post.id%>"><h3><%= post.title %></h3></a>
+    5:   <p><%= post.body %></p>
+    6:   <br>
+  app/views/tags/_tags.html.erb:3:in `_app_views_tags__tags_html_erb__464618207911383066_2157951020'
+  app/controllers/flying_switch_controller.rb:18:in `async'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.5ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (245.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 07:33:54 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 07:33:54 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 07:33:54 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 07:33:54 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 07:33:54 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 07:33:54 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:33:55 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags"}
+  [1m[35mTag Load (0.4ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/_tags.html.erb (2.1ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:33:56 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/2"}
+  [1m[36mTag Load (23.5ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered tags/_tag.html.erb (5.7ms)
+Completed 500 Internal Server Error in 39ms
+
+ActionView::Template::Error (undefined method `posts' for #<Tag:0x00000101d340d0>):
+    1: <h1>Tag: <%= @tag.name %></h1>
+    2: 
+    3: <% @tag.posts.each do |post| %>
+    4:   <a class='fs-link' href="/#/_/posts/<%=post.id%>"><h3><%= post.title %></h3></a>
+    5:   <p><%= post.body %></p>
+    6:   <br>
+  app/views/tags/_tag.html.erb:3:in `_app_views_tags__tag_html_erb__1525795236027177613_2162781260'
+  app/controllers/flying_switch_controller.rb:15:in `async'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (9.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 07:34:01 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 07:34:45 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 07:34:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 07:34:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 07:34:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 07:34:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 07:34:45 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:34:46 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags"}
+  [1m[35mTag Load (0.4ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/_tags.html.erb (7.1ms)
+Completed 200 OK in 17ms (Views: 8.2ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:34:48 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/2"}
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 2]]
+PG::UndefinedColumn: ERROR:  column posts.tag_id does not exist
+LINE 1: SELECT "posts".* FROM "posts"  WHERE "posts"."tag_id" = $1
+                                             ^
+: SELECT "posts".* FROM "posts"  WHERE "posts"."tag_id" = $1
+  Rendered tags/_tag.html.erb (10.5ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column posts.tag_id does not exist
+LINE 1: SELECT "posts".* FROM "posts"  WHERE "posts"."tag_id" = $1
+                                             ^
+: SELECT "posts".* FROM "posts"  WHERE "posts"."tag_id" = $1):
+    1: <h1>Tag: <%= @tag.name %></h1>
+    2: 
+    3: <% @tag.posts.each do |post| %>
+    4:   <a class='fs-link' href="/#/_/posts/<%=post.id%>"><h3><%= post.title %></h3></a>
+    5:   <p><%= post.body %></p>
+    6:   <br>
+  app/views/tags/_tag.html.erb:3:in `_app_views_tags__tag_html_erb__1525795236027177613_2162781260'
+  app/controllers/flying_switch_controller.rb:15:in `async'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.3ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (11.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 07:35:10 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 39ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 07:35:11 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 07:35:11 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 07:35:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 07:35:11 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 07:35:11 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:35:12 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags"}
+  [1m[35mTag Load (0.5ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/_tags.html.erb (8.7ms)
+Completed 200 OK in 22ms (Views: 11.3ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:35:13 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/2"}
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 2]]
+PG::UndefinedColumn: ERROR:  column posts.tag_id does not exist
+LINE 1: SELECT "posts".* FROM "posts"  WHERE "posts"."tag_id" = $1
+                                             ^
+: SELECT "posts".* FROM "posts"  WHERE "posts"."tag_id" = $1
+  Rendered tags/_tag.html.erb (21.5ms)
+Completed 500 Internal Server Error in 32ms
+
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column posts.tag_id does not exist
+LINE 1: SELECT "posts".* FROM "posts"  WHERE "posts"."tag_id" = $1
+                                             ^
+: SELECT "posts".* FROM "posts"  WHERE "posts"."tag_id" = $1):
+    1: <h1>Tag: <%= @tag.name %></h1>
+    2: 
+    3: <% @tag.posts.each do |post| %>
+    4:   <a class='fs-link' href="/#/_/posts/<%=post.id%>"><h3><%= post.title %></h3></a>
+    5:   <p><%= post.body %></p>
+    6:   <br>
+  app/views/tags/_tag.html.erb:3:in `_app_views_tags__tag_html_erb___2434675825401676785_2184324280'
+  app/controllers/flying_switch_controller.rb:15:in `async'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (10.9ms)
+  [1m[36m (2.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (1.6ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePosts (20140828124759)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (5.6ms)[0m  [1mCREATE TABLE "posts" ("id" serial primary key, "title" character varying(255), "body" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (16.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140828124759"]]
+  [1m[36m (15.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTags (20140828124824)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (2.4ms)[0m  [1mCREATE TABLE "tags" ("id" serial primary key, "name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140828124824"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreatePostTags (20140828124827)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePostTags (20140828124827)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (2.6ms)[0m  [1mCREATE TABLE "tags" ("id" serial primary key, "post_id" integer, "tag_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+PG::DuplicateTable: ERROR:  relation "tags" already exists
+: CREATE TABLE "tags" ("id" serial primary key, "post_id" integer, "tag_id" integer, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePostTags (20140828124827)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "post_tags" ("id" serial primary key, "post_id" integer, "tag_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140828124827"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateComments (20140828124853)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (3.0ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "body" text, "post_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140828124853"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "This was the first"], ["created_at", "2014-09-02 12:39:34.606468"], ["title", "First!"], ["updated_at", "2014-09-02 12:39:34.606468"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "comments" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["body", "No it was not!"], ["created_at", "2014-09-02 12:39:34.629357"], ["updated_at", "2014-09-02 12:39:34.629357"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "comments" SET "post_id" = $1, "updated_at" = $2 WHERE "comments"."id" = 1[0m  [["post_id", 1], ["updated_at", "2014-09-02 12:39:34.634395"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "comments" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["body", "Where are we?"], ["created_at", "2014-09-02 12:39:34.637276"], ["updated_at", "2014-09-02 12:39:34.637276"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "comments" SET "post_id" = $1, "updated_at" = $2 WHERE "comments"."id" = 2[0m  [["post_id", 1], ["updated_at", "2014-09-02 12:39:34.639034"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "tags" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2014-09-02 12:39:34.648377"], ["name", "Worthless"], ["updated_at", "2014-09-02 12:39:34.648377"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 07:40:49 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 41ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 07:40:49 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 07:40:49 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 07:40:49 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 07:40:49 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 07:40:49 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:40:50 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags"}
+  [1m[35mTag Load (0.5ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/_tags.html.erb (8.7ms)
+Completed 200 OK in 26ms (Views: 13.2ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:40:51 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/1"}
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 1]]
+PG::UndefinedColumn: ERROR:  column posts.tag_id does not exist
+LINE 1: SELECT "posts".* FROM "posts"  WHERE "posts"."tag_id" = $1
+                                             ^
+: SELECT "posts".* FROM "posts"  WHERE "posts"."tag_id" = $1
+  Rendered tags/_tag.html.erb (21.3ms)
+Completed 500 Internal Server Error in 30ms
+
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column posts.tag_id does not exist
+LINE 1: SELECT "posts".* FROM "posts"  WHERE "posts"."tag_id" = $1
+                                             ^
+: SELECT "posts".* FROM "posts"  WHERE "posts"."tag_id" = $1):
+    1: <h1>Tag: <%= @tag.name %></h1>
+    2: 
+    3: <% @tag.posts.each do |post| %>
+    4:   <a class='fs-link' href="/#/_/posts/<%=post.id%>"><h3><%= post.title %></h3></a>
+    5:   <p><%= post.body %></p>
+    6:   <br>
+  app/views/tags/_tag.html.erb:3:in `_app_views_tags__tag_html_erb___1146652516055677719_2179855060'
+  app/controllers/flying_switch_controller.rb:15:in `async'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (11.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 07:41:46 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 07:41:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 07:41:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 07:41:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 07:41:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 07:41:46 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:41:47 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts"}
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_posts.html.erb (9.1ms)
+Completed 200 OK in 26ms (Views: 11.4ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:41:48 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.6ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1  [["post_id", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/_post.html.erb (91.9ms)
+Completed 200 OK in 99ms (Views: 90.6ms | ActiveRecord: 5.8ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:41:50 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags"}
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/_tags.html.erb (5.1ms)
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:41:53 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/1"}
+  [1m[36mTag Load (0.5ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered tags/_tag.html.erb (72.4ms)
+Completed 500 Internal Server Error in 80ms
+
+ActionView::Template::Error (Could not find the source association(s) :post or :posts in model PostTag. Try 'has_many :posts, :through => :post_tags, :source => <name>'. Is it one of tag or comment?):
+    1: <h1>Tag: <%= @tag.name %></h1>
+    2: 
+    3: <% @tag.posts.each do |post| %>
+    4:   <a class='fs-link' href="/#/_/posts/<%=post.id%>"><h3><%= post.title %></h3></a>
+    5:   <p><%= post.body %></p>
+    6:   <br>
+  app/views/tags/_tag.html.erb:3:in `_app_views_tags__tag_html_erb___1146652516055677719_2179855060'
+  app/controllers/flying_switch_controller.rb:15:in `async'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 07:42:35 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 07:42:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 07:42:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 07:42:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 07:42:35 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 07:42:35 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:42:36 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags"}
+  [1m[35mTag Load (0.4ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/_tags.html.erb (8.0ms)
+Completed 200 OK in 21ms (Views: 9.9ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:42:37 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/1"}
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_tags" ON "posts"."id" = "post_tags"."post_id" WHERE "post_tags"."tag_id" = $1  [["tag_id", 1]]
+  Rendered tags/_tag.html.erb (12.1ms)
+Completed 200 OK in 19ms (Views: 13.8ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:42:39 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags"}
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+  Rendered tags/_tags.html.erb (1.2ms)
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.4ms)
+  [1m[36mTag Load (0.5ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "This was the first"], ["created_at", "2014-09-02 12:43:09.243614"], ["title", "First!"], ["updated_at", "2014-09-02 12:43:09.243614"]]
+  [1m[35m (1.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "comments" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["body", "No it was not!"], ["created_at", "2014-09-02 12:43:09.270277"], ["updated_at", "2014-09-02 12:43:09.270277"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "comments" SET "post_id" = $1, "updated_at" = $2 WHERE "comments"."id" = 3[0m  [["post_id", 2], ["updated_at", "2014-09-02 12:43:09.275371"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "comments" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["body", "Where are we?"], ["created_at", "2014-09-02 12:43:09.278454"], ["updated_at", "2014-09-02 12:43:09.278454"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "comments" SET "post_id" = $1, "updated_at" = $2 WHERE "comments"."id" = 4[0m  [["post_id", 2], ["updated_at", "2014-09-02 12:43:09.280312"]]
+  [1m[35m (1.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tags" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2014-09-02 12:43:09.296385"], ["name", "Worthless"], ["updated_at", "2014-09-02 12:43:09.296385"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "post_tags" ("created_at", "post_id", "tag_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-02 12:43:09.305273"], ["post_id", 2], ["tag_id", 2], ["updated_at", "2014-09-02 12:43:09.305273"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tags" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2014-09-02 12:43:09.308383"], ["name", "Interwebs"], ["updated_at", "2014-09-02 12:43:09.308383"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "post_tags" ("created_at", "post_id", "tag_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-02 12:43:09.311377"], ["post_id", 2], ["tag_id", 3], ["updated_at", "2014-09-02 12:43:09.311377"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["body", "Neither Duran, nor Duran, Discuss"], ["created_at", "2014-09-02 12:43:09.313787"], ["title", "Duran Duran"], ["updated_at", "2014-09-02 12:43:09.313787"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "comments" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["body", "It be Duran!"], ["created_at", "2014-09-02 12:43:09.316992"], ["updated_at", "2014-09-02 12:43:09.316992"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "comments" SET "post_id" = $1, "updated_at" = $2 WHERE "comments"."id" = 5  [["post_id", 3], ["updated_at", "2014-09-02 12:43:09.319152"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tags" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-09-02 12:43:09.321571"], ["name", "Worthless"], ["updated_at", "2014-09-02 12:43:09.321571"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "post_tags" ("created_at", "post_id", "tag_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-02 12:43:09.324001"], ["post_id", 3], ["tag_id", 4], ["updated_at", "2014-09-02 12:43:09.324001"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tags" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-09-02 12:43:09.333898"], ["name", "cheeeeese"], ["updated_at", "2014-09-02 12:43:09.333898"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "post_tags" ("created_at", "post_id", "tag_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-02 12:43:09.337676"], ["post_id", 3], ["tag_id", 5], ["updated_at", "2014-09-02 12:43:09.337676"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tags" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-09-02 12:43:09.340165"], ["name", "80's music"], ["updated_at", "2014-09-02 12:43:09.340165"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "post_tags" ("created_at", "post_id", "tag_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-02 12:43:09.343228"], ["post_id", 3], ["tag_id", 6], ["updated_at", "2014-09-02 12:43:09.343228"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Progressive Gender/Economic equalists? or Regressive Zealous Biogts"], ["created_at", "2014-09-02 12:43:09.345367"], ["title", "Khawarij"], ["updated_at", "2014-09-02 12:43:09.345367"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "comments" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["body", "Mountains are for the winners!"], ["created_at", "2014-09-02 12:43:09.347696"], ["updated_at", "2014-09-02 12:43:09.347696"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "comments" SET "post_id" = $1, "updated_at" = $2 WHERE "comments"."id" = 6[0m  [["post_id", 4], ["updated_at", "2014-09-02 12:43:09.349481"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "comments" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["body", "Go al-Shaybani!"], ["created_at", "2014-09-02 12:43:09.351173"], ["updated_at", "2014-09-02 12:43:09.351173"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "comments" SET "post_id" = $1, "updated_at" = $2 WHERE "comments"."id" = 7[0m  [["post_id", 4], ["updated_at", "2014-09-02 12:43:09.352840"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "comments" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["body", "Go al-Khaybari!"], ["created_at", "2014-09-02 12:43:09.354577"], ["updated_at", "2014-09-02 12:43:09.354577"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "comments" SET "post_id" = $1, "updated_at" = $2 WHERE "comments"."id" = 8[0m  [["post_id", 4], ["updated_at", "2014-09-02 12:43:09.356209"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tags" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2014-09-02 12:43:09.358395"], ["name", "Blast From Past"], ["updated_at", "2014-09-02 12:43:09.358395"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "post_tags" ("created_at", "post_id", "tag_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-02 12:43:09.361249"], ["post_id", 4], ["tag_id", 7], ["updated_at", "2014-09-02 12:43:09.361249"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[36m (3.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (1.7ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePosts (20140828124759)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (3.7ms)[0m  [1mCREATE TABLE "posts" ("id" serial primary key, "title" character varying(255), "body" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140828124759"]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTags (20140828124824)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "tags" ("id" serial primary key, "name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140828124824"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreatePostTags (20140828124827)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "post_tags" ("id" serial primary key, "post_id" integer, "tag_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140828124827"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateComments (20140828124853)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (3.3ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "body" text, "post_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140828124853"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "This was the first"], ["created_at", "2014-09-02 12:43:42.791867"], ["title", "First!"], ["updated_at", "2014-09-02 12:43:42.791867"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "comments" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["body", "No it was not!"], ["created_at", "2014-09-02 12:43:42.819104"], ["updated_at", "2014-09-02 12:43:42.819104"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "comments" SET "post_id" = $1, "updated_at" = $2 WHERE "comments"."id" = 1[0m  [["post_id", 1], ["updated_at", "2014-09-02 12:43:42.827064"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["body", "Where are we?"], ["created_at", "2014-09-02 12:43:42.831574"], ["updated_at", "2014-09-02 12:43:42.831574"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "comments" SET "post_id" = $1, "updated_at" = $2 WHERE "comments"."id" = 2[0m  [["post_id", 1], ["updated_at", "2014-09-02 12:43:42.834628"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "tags" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2014-09-02 12:43:42.862735"], ["name", "Worthless"], ["updated_at", "2014-09-02 12:43:42.862735"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "post_tags" ("created_at", "post_id", "tag_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-02 12:43:42.877151"], ["post_id", 1], ["tag_id", 1], ["updated_at", "2014-09-02 12:43:42.877151"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tags" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2014-09-02 12:43:42.881590"], ["name", "Interwebs"], ["updated_at", "2014-09-02 12:43:42.881590"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "post_tags" ("created_at", "post_id", "tag_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-02 12:43:42.885998"], ["post_id", 1], ["tag_id", 2], ["updated_at", "2014-09-02 12:43:42.885998"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["body", "Neither Duran, nor Duran, Discuss"], ["created_at", "2014-09-02 12:43:42.889794"], ["title", "Duran Duran"], ["updated_at", "2014-09-02 12:43:42.889794"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "comments" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["body", "It be Duran!"], ["created_at", "2014-09-02 12:43:42.894155"], ["updated_at", "2014-09-02 12:43:42.894155"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "comments" SET "post_id" = $1, "updated_at" = $2 WHERE "comments"."id" = 3  [["post_id", 2], ["updated_at", "2014-09-02 12:43:42.897203"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tags" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-09-02 12:43:42.901450"], ["name", "Worthless"], ["updated_at", "2014-09-02 12:43:42.901450"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "post_tags" ("created_at", "post_id", "tag_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-02 12:43:42.905800"], ["post_id", 2], ["tag_id", 3], ["updated_at", "2014-09-02 12:43:42.905800"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tags" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-09-02 12:43:42.909934"], ["name", "cheeeeese"], ["updated_at", "2014-09-02 12:43:42.909934"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "post_tags" ("created_at", "post_id", "tag_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-02 12:43:42.914070"], ["post_id", 2], ["tag_id", 4], ["updated_at", "2014-09-02 12:43:42.914070"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tags" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-09-02 12:43:42.917284"], ["name", "80's music"], ["updated_at", "2014-09-02 12:43:42.917284"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "post_tags" ("created_at", "post_id", "tag_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-02 12:43:42.921280"], ["post_id", 2], ["tag_id", 5], ["updated_at", "2014-09-02 12:43:42.921280"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Progressive Gender/Economic equalists? or Regressive Zealous Biogts"], ["created_at", "2014-09-02 12:43:42.924542"], ["title", "Khawarij"], ["updated_at", "2014-09-02 12:43:42.924542"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["body", "Mountains are for the winners!"], ["created_at", "2014-09-02 12:43:42.928382"], ["updated_at", "2014-09-02 12:43:42.928382"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "comments" SET "post_id" = $1, "updated_at" = $2 WHERE "comments"."id" = 4[0m  [["post_id", 3], ["updated_at", "2014-09-02 12:43:42.931527"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["body", "Go al-Shaybani!"], ["created_at", "2014-09-02 12:43:42.934490"], ["updated_at", "2014-09-02 12:43:42.934490"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "comments" SET "post_id" = $1, "updated_at" = $2 WHERE "comments"."id" = 5[0m  [["post_id", 3], ["updated_at", "2014-09-02 12:43:42.937332"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "comments" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["body", "Go al-Khaybari!"], ["created_at", "2014-09-02 12:43:42.940321"], ["updated_at", "2014-09-02 12:43:42.940321"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "comments" SET "post_id" = $1, "updated_at" = $2 WHERE "comments"."id" = 6[0m  [["post_id", 3], ["updated_at", "2014-09-02 12:43:42.943364"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tags" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2014-09-02 12:43:42.947248"], ["name", "Blast From Past"], ["updated_at", "2014-09-02 12:43:42.947248"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "post_tags" ("created_at", "post_id", "tag_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-02 12:43:42.951362"], ["post_id", 3], ["tag_id", 6], ["updated_at", "2014-09-02 12:43:42.951362"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (9.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (2.3ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePosts (20140828124759)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (5.0ms)[0m  [1mCREATE TABLE "posts" ("id" serial primary key, "title" character varying(255), "body" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140828124759"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTags (20140828124824)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "tags" ("id" serial primary key, "name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140828124824"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreatePostTags (20140828124827)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "post_tags" ("id" serial primary key, "post_id" integer, "tag_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140828124827"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateComments (20140828124853)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "body" text, "post_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140828124853"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "This was the first"], ["created_at", "2014-09-02 12:44:34.985074"], ["title", "First!"], ["updated_at", "2014-09-02 12:44:34.985074"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "comments" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["body", "No it was not!"], ["created_at", "2014-09-02 12:44:35.006330"], ["updated_at", "2014-09-02 12:44:35.006330"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "comments" SET "post_id" = $1, "updated_at" = $2 WHERE "comments"."id" = 1[0m  [["post_id", 1], ["updated_at", "2014-09-02 12:44:35.012557"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["body", "Where are we?"], ["created_at", "2014-09-02 12:44:35.016413"], ["updated_at", "2014-09-02 12:44:35.016413"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "comments" SET "post_id" = $1, "updated_at" = $2 WHERE "comments"."id" = 2[0m  [["post_id", 1], ["updated_at", "2014-09-02 12:44:35.019238"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "tags" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2014-09-02 12:44:35.038440"], ["name", "Worthless"], ["updated_at", "2014-09-02 12:44:35.038440"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "post_tags" ("created_at", "post_id", "tag_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-02 12:44:35.047250"], ["post_id", 1], ["tag_id", 1], ["updated_at", "2014-09-02 12:44:35.047250"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tags" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2014-09-02 12:44:35.050686"], ["name", "Interwebs"], ["updated_at", "2014-09-02 12:44:35.050686"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "post_tags" ("created_at", "post_id", "tag_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-02 12:44:35.053268"], ["post_id", 1], ["tag_id", 2], ["updated_at", "2014-09-02 12:44:35.053268"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["body", "Neither Duran, nor Duran, Discuss"], ["created_at", "2014-09-02 12:44:35.055237"], ["title", "Duran Duran"], ["updated_at", "2014-09-02 12:44:35.055237"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "comments" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["body", "It be Duran!"], ["created_at", "2014-09-02 12:44:35.057676"], ["updated_at", "2014-09-02 12:44:35.057676"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "comments" SET "post_id" = $1, "updated_at" = $2 WHERE "comments"."id" = 3  [["post_id", 2], ["updated_at", "2014-09-02 12:44:35.059558"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tags" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-09-02 12:44:35.061964"], ["name", "Worthless"], ["updated_at", "2014-09-02 12:44:35.061964"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "post_tags" ("created_at", "post_id", "tag_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-02 12:44:35.064378"], ["post_id", 2], ["tag_id", 3], ["updated_at", "2014-09-02 12:44:35.064378"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tags" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-09-02 12:44:35.066336"], ["name", "cheeeeese"], ["updated_at", "2014-09-02 12:44:35.066336"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "post_tags" ("created_at", "post_id", "tag_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-02 12:44:35.068843"], ["post_id", 2], ["tag_id", 4], ["updated_at", "2014-09-02 12:44:35.068843"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tags" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-09-02 12:44:35.070728"], ["name", "80's music"], ["updated_at", "2014-09-02 12:44:35.070728"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "post_tags" ("created_at", "post_id", "tag_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-02 12:44:35.073087"], ["post_id", 2], ["tag_id", 5], ["updated_at", "2014-09-02 12:44:35.073087"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Progressive Gender/Economic equalists? or Regressive Zealous Biogts"], ["created_at", "2014-09-02 12:44:35.074981"], ["title", "Khawarij"], ["updated_at", "2014-09-02 12:44:35.074981"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "comments" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["body", "Mountains are for the winners!"], ["created_at", "2014-09-02 12:44:35.077329"], ["updated_at", "2014-09-02 12:44:35.077329"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "comments" SET "post_id" = $1, "updated_at" = $2 WHERE "comments"."id" = 4[0m  [["post_id", 3], ["updated_at", "2014-09-02 12:44:35.079043"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "comments" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["body", "Go al-Shaybani!"], ["created_at", "2014-09-02 12:44:35.080826"], ["updated_at", "2014-09-02 12:44:35.080826"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "comments" SET "post_id" = $1, "updated_at" = $2 WHERE "comments"."id" = 5[0m  [["post_id", 3], ["updated_at", "2014-09-02 12:44:35.082663"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "comments" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["body", "Go al-Khaybari!"], ["created_at", "2014-09-02 12:44:35.084299"], ["updated_at", "2014-09-02 12:44:35.084299"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "comments" SET "post_id" = $1, "updated_at" = $2 WHERE "comments"."id" = 6[0m  [["post_id", 3], ["updated_at", "2014-09-02 12:44:35.085992"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tags" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2014-09-02 12:44:35.088989"], ["name", "Blast From Past"], ["updated_at", "2014-09-02 12:44:35.088989"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "post_tags" ("created_at", "post_id", "tag_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-02 12:44:35.091521"], ["post_id", 3], ["tag_id", 6], ["updated_at", "2014-09-02 12:44:35.091521"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 07:44:44 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 44ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 07:44:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 07:44:45 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 07:44:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 07:44:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 07:44:45 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:44:46 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_posts.html.erb (11.0ms)
+Completed 200 OK in 30ms (Views: 13.5ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:44:47 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.9ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1  [["post_id", 1]]
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/_post.html.erb (55.4ms)
+Completed 200 OK in 65ms (Views: 52.4ms | ActiveRecord: 7.8ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:44:49 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags"}
+  [1m[35mTag Load (0.4ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/_tags.html.erb (2.3ms)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:44:50 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/3"}
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_tags" ON "posts"."id" = "post_tags"."post_id" WHERE "post_tags"."tag_id" = $1  [["tag_id", 3]]
+  Rendered tags/_tag.html.erb (4.7ms)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:44:53 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/2"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mTag Load (0.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1  [["post_id", 2]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered posts/_post.html.erb (4.0ms)
+Completed 200 OK in 11ms (Views: 7.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 07:45:31 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 07:45:31 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 07:45:31 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 07:45:31 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 07:45:31 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 07:45:31 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:45:32 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_posts.html.erb (1.6ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:45:33 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1  [["post_id", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/_post.html.erb (4.4ms)
+Completed 200 OK in 12ms (Views: 8.4ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:45:34 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/2"}
+  [1m[35mTag Load (0.4ms)[0m  SELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" INNER JOIN "post_tags" ON "posts"."id" = "post_tags"."post_id" WHERE "post_tags"."tag_id" = $1[0m  [["tag_id", 2]]
+  Rendered tags/_tag.html.erb (2.0ms)
+Completed 200 OK in 9ms (Views: 5.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:45:35 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/1"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/_post.html.erb (3.2ms)
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 07:46:57 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 07:46:57 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 07:46:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 07:46:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 07:46:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 07:46:57 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:46:58 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"comments"}
+  Rendered comments/_comments.html.erb (6.1ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>Comments</h1>
+    2: 
+    3: <% @tags.each do |tag| %>
+    4:   <p><%= tag.post %></p>
+    5:   <a class='fs-link' href="/#/_/tags/<%=tag.id%>"><h3><%= tag.body %></h3></a>
+    6:   <br>
+  app/views/comments/_comments.html.erb:3:in `_app_views_comments__comments_html_erb___2463573797472011665_2157030480'
+  app/controllers/flying_switch_controller.rb:18:in `async'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.4ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 07:47:17 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 07:47:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 07:47:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 07:47:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 07:47:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 07:47:17 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:47:18 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"comments"}
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered comments/_comments.html.erb (7.7ms)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 07:47:25 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 07:47:25 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 07:47:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 07:47:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 07:47:25 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 07:47:25 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:47:26 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"comments"}
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered comments/_comments.html.erb (8.1ms)
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:47:36 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"comments/1"}
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT  "comments".* FROM "comments"  WHERE "comments"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered comments/_comment.html.erb (5.0ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <h1><%= @post.title %></h1>
+    2: <h3>Tags:</h3>
+    3: <ul>
+    4:   <% @post.tags.each do |tag| %>
+  app/views/comments/_comment.html.erb:1:in `_app_views_comments__comment_html_erb__2276208169138005410_2186981900'
+  app/controllers/flying_switch_controller.rb:15:in `async'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.1ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.5ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (15.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 07:48:40 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 07:48:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 07:48:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 07:48:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 07:48:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 07:48:40 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:48:41 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"comments"}
+  [1m[35mComment Load (0.6ms)[0m  SELECT "comments".* FROM "comments"
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered comments/_comments.html.erb (9.3ms)
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:48:42 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"comments/1"}
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT  "comments".* FROM "comments"  WHERE "comments"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered comments/_comment.html.erb (2.5ms)
+Completed 200 OK in 11ms (Views: 7.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 07:49:17 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 07:49:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 07:49:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 07:49:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 07:49:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 07:49:17 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:49:18 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"comments"}
+  [1m[36mComment Load (0.7ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered comments/_comments.html.erb (7.2ms)
+Completed 200 OK in 15ms (Views: 11.8ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:49:19 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"comments/1"}
+  [1m[35mComment Load (0.3ms)[0m  SELECT  "comments".* FROM "comments"  WHERE "comments"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered comments/_comment.html.erb (1.7ms)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 07:49:32 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 07:49:32 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 07:49:32 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 07:49:32 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 07:49:32 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 07:49:32 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:49:33 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"comments"}
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments"
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered comments/_comments.html.erb (7.7ms)
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:49:34 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"comments/1"}
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT  "comments".* FROM "comments"  WHERE "comments"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered comments/_comment.html.erb (2.5ms)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:50:01 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_posts.html.erb (1.5ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:50:02 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.5ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/_post.html.erb (4.2ms)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 07:50:16 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 07:50:16 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 07:50:16 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 07:50:16 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 07:50:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 07:50:16 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:50:17 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts"}
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_posts.html.erb (1.9ms)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:50:18 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/2"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1  [["post_id", 2]]
+  Rendered posts/_post.html.erb (4.3ms)
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:50:19 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/4"}
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_tags" ON "posts"."id" = "post_tags"."post_id" WHERE "post_tags"."tag_id" = $1  [["tag_id", 4]]
+  Rendered tags/_tag.html.erb (2.3ms)
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:50:21 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/2"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1  [["post_id", 2]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered posts/_post.html.erb (3.7ms)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 07:50:21 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/5"}
+  [1m[35mTag Load (0.4ms)[0m  SELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" INNER JOIN "post_tags" ON "posts"."id" = "post_tags"."post_id" WHERE "post_tags"."tag_id" = $1[0m  [["tag_id", 5]]
+  Rendered tags/_tag.html.erb (2.5ms)
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.8ms)

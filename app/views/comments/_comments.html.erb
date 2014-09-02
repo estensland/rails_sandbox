@@ -1,0 +1,8 @@
+<h1>Comments</h1>
+
+<% @comments.each do |comment| %>
+  <p><%= comment.post.title %></p>
+  <a class='fs-link' href="/#/_/comments/<%=comment.id%>"><h3><%= comment.body %></h3></a>
+  <br>
+<% end %>
+
