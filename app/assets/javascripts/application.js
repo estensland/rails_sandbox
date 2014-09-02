@@ -15,16 +15,38 @@
 //= require turbolinks
 //= require_tree .
 
+flyingSwitch = {
+  setBindings: function() {
+    $(document).on('ready', function(e){
+      flyingSwitch.hashChange()
+    })
 
-$(document).on('click', '.fs-link', function(e){
-  var clicked = this;
-  var href = $(clicked).attr('href');
+    $(window).on('hashchange', function(e){
+      flyingSwitch.hashChange()
+    })
 
-  if (href.match(/#\/_\//)) {
-    var params = href.split('#/_/')[1];
-    console.log(params)
-    $.post('/fs/', {fs: params}, function(partial){
-      $('#flying-switch').html(partial);
+    $(document).on('click', '.fs-link', function(e){
+      var clicked = this;
+      var href = $(clicked).attr('href');
+      flyingSwitch.AJAXCall(href)
     });
+
+  },
+
+  hashChange: function(){
+    var hash = window.location.hash
+    if (hash) {
+      this.AJAXCall(hash)
+    }
+  },
+  AJAXCall: function(path) {
+    if (path.match(/#\/_\//)) {
+      var params = path.split('#/_/')[1];
+      $.post('/fs/', {fs: params}, function(partial){
+        $('#flying-switch').html(partial);
+      });
+    }
   }
-});
+}
+
+flyingSwitch.setBindings()

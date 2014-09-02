@@ -6303,3 +6303,1474 @@ Processing by FlyingSwitchController#async as */*
   [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" INNER JOIN "post_tags" ON "posts"."id" = "post_tags"."post_id" WHERE "post_tags"."tag_id" = $1[0m  [["tag_id", 5]]
   Rendered tags/_tag.html.erb (2.5ms)
 Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:29:40 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 50ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:29:40 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:29:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:29:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:29:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:29:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:29:40 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:29:44 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts"}
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_posts.html.erb (14.7ms)
+Completed 200 OK in 39ms (Views: 20.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:30:28 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:34:48 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:34:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:34:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:34:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:34:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:34:48 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:34:59 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:34:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:34:59 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:34:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:34:59 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:34:59 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:35:27 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 44ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:35:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:35:27 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:35:27 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:35:27 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:35:27 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:35:27 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_posts.html.erb (1.2ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:35:29 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags"}
+  [1m[35mTag Load (0.5ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/_tags.html.erb (6.7ms)
+Completed 200 OK in 21ms (Views: 10.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:35:29 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:35:29 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:35:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:35:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:35:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:35:29 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:35:29 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags"}
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+  Rendered tags/_tags.html.erb (1.7ms)
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:35:30 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"comments"}
+  [1m[35mComment Load (1.1ms)[0m  SELECT "comments".* FROM "comments"
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered comments/_comments.html.erb (37.5ms)
+Completed 200 OK in 55ms (Views: 44.0ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:35:31 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:35:31 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:35:31 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:35:31 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:35:31 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:35:31 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:35:31 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"comments"}
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered comments/_comments.html.erb (9.6ms)
+Completed 200 OK in 20ms (Views: 13.9ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:35:45 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"comments/1"}
+  [1m[35mComment Load (1.1ms)[0m  SELECT  "comments".* FROM "comments"  WHERE "comments"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered comments/_comment.html.erb (2.2ms)
+Completed 200 OK in 15ms (Views: 9.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:35:53 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:35:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:35:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:35:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:35:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:35:53 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:35:53 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"comments/3"}
+  [1m[35mComment Load (0.5ms)[0m  SELECT  "comments".* FROM "comments"  WHERE "comments"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered comments/_comment.html.erb (2.4ms)
+Completed 200 OK in 11ms (Views: 7.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:35:56 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:35:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:35:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:35:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:35:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:35:56 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:35:56 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"comments/3"}
+  [1m[35mComment Load (0.4ms)[0m  SELECT  "comments".* FROM "comments"  WHERE "comments"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered comments/_comment.html.erb (1.7ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:39:07 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:39:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:07 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:39:07 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_posts.html.erb (1.4ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:39:15 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:39:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:15 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:39:15 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/1"}
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.4ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1  [["post_id", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/_post.html.erb (23.2ms)
+Completed 200 OK in 34ms (Views: 28.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:39:20 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:20 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:20 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:20 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:20 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:39:20 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:39:20 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/2"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1  [["post_id", 2]]
+  Rendered posts/_post.html.erb (3.6ms)
+Completed 200 OK in 13ms (Views: 7.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:39:30 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:39:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:30 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:39:30 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/3"}
+  [1m[36mPost Load (1.7ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mTag Load (0.4ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1  [["post_id", 3]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  Rendered posts/_post.html.erb (4.1ms)
+Completed 200 OK in 14ms (Views: 8.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:39:34 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:39:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:34 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:39:35 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/2"}
+  [1m[35mPost Load (0.8ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mTag Load (0.5ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1  [["post_id", 2]]
+  Rendered posts/_post.html.erb (3.6ms)
+Completed 200 OK in 13ms (Views: 7.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:39:41 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:41 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:39:41 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:39:41 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/1"}
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.6ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1  [["post_id", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/_post.html.erb (4.1ms)
+Completed 200 OK in 11ms (Views: 7.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:39:48 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:48 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:39:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:48 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:39:48 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_posts.html.erb (1.7ms)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:39:50 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:39:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:39:50 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:39:50 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.4ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1  [["post_id", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/_post.html.erb (3.3ms)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:40:03 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:40:03 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:40:03 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:40:03 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:40:03 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:40:03 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:40:03 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/_post.html.erb (3.8ms)
+Completed 200 OK in 12ms (Views: 8.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:40:14 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:40:14 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:40:14 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:40:14 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:40:14 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:40:14 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:40:14 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1  [["post_id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/_post.html.erb (2.8ms)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:40:17 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:40:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:40:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:40:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:40:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:40:17 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:40:17 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/_post.html.erb (2.9ms)
+Completed 200 OK in 11ms (Views: 6.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:40:20 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:40:20 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:40:20 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:40:20 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:40:20 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:40:20 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:40:20 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/2"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1  [["post_id", 2]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered posts/_post.html.erb (2.7ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:40:20 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/2"}
+  [1m[35mPost Load (6.2ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mTag Load (0.9ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mComment Load (0.7ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1  [["post_id", 2]]
+  Rendered posts/_post.html.erb (5.4ms)
+Completed 200 OK in 20ms (Views: 8.7ms | ActiveRecord: 7.9ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:40:25 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/3"}
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1  [["post_id", 3]]
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  Rendered posts/_post.html.erb (4.1ms)
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:40:42 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:40:42 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:40:42 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:40:42 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:40:42 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:40:42 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:40:43 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/2"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1  [["post_id", 2]]
+  Rendered posts/_post.html.erb (2.6ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:40:43 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/2"}
+  [1m[36mPost Load (1.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mTag Load (2.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1  [["post_id", 2]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered posts/_post.html.erb (6.3ms)
+Completed 200 OK in 14ms (Views: 7.8ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:40:46 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/1"}
+  [1m[35mPost Load (1.1ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (1.4ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/_post.html.erb (5.4ms)
+Completed 200 OK in 14ms (Views: 8.6ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:42:44 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/3"}
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1  [["post_id", 3]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  Rendered posts/_post.html.erb (3.2ms)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:42:46 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags"}
+  [1m[35mTag Load (0.5ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/_tags.html.erb (2.0ms)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:42:46 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags"}
+  [1m[36mTag Load (1.2ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+  Rendered tags/_tags.html.erb (2.9ms)
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:42:49 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/_post.html.erb (4.2ms)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:42:51 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"post"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_posts.html.erb (1.6ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:42:56 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_posts.html.erb (1.2ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:43:05 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"postsaaasdas"}
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant Postsaaasda):
+  app/controllers/flying_switch_controller.rb:17:in `async'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.3ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (24.0ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:43:10 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_posts.html.erb (1.3ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:43:23 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:43:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:43:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:43:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:43:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:43:23 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:43:25 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:43:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:43:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:43:25 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:43:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:43:25 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:43:27 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:43:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:43:27 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:43:27 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:43:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:43:27 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:43:27 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/1"}
+  [1m[35mPost Load (1.2ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/_post.html.erb (4.0ms)
+Completed 200 OK in 13ms (Views: 8.4ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:43:29 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_posts.html.erb (1.5ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:49:09 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:49:09 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:49:09 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:49:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:49:09 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:49:09 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:49:18 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:49:18 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:49:18 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:49:18 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:49:18 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:49:18 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:49:18 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts"}
+  [1m[35mPost Load (1.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_posts.html.erb (2.4ms)
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:49:21 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:49:21 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:49:21 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:49:21 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:49:21 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:49:21 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:49:21 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (1.0ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1  [["post_id", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/_post.html.erb (5.1ms)
+Completed 200 OK in 12ms (Views: 8.5ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:49:23 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags"}
+  [1m[35mTag Load (0.5ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/_tags.html.erb (1.7ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:49:33 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:49:33 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:49:33 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:49:33 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:49:33 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:49:33 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:49:33 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags"}
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+  Rendered tags/_tags.html.erb (1.2ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:49:34 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags"}
+  [1m[35mTag Load (1.2ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/_tags.html.erb (2.8ms)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:49:35 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/1"}
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_tags" ON "posts"."id" = "post_tags"."post_id" WHERE "post_tags"."tag_id" = $1  [["tag_id", 1]]
+  Rendered tags/_tag.html.erb (4.0ms)
+Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:49:35 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/1"}
+  [1m[36mTag Load (1.7ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (4.2ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_tags" ON "posts"."id" = "post_tags"."post_id" WHERE "post_tags"."tag_id" = $1  [["tag_id", 1]]
+  Rendered tags/_tag.html.erb (6.6ms)
+Completed 200 OK in 17ms (Views: 7.5ms | ActiveRecord: 5.9ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:49:36 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1  [["post_id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/_post.html.erb (3.3ms)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:49:36 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/_post.html.erb (4.3ms)
+Completed 200 OK in 12ms (Views: 8.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:49:37 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/2"}
+  [1m[36mTag Load (0.8ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_tags" ON "posts"."id" = "post_tags"."post_id" WHERE "post_tags"."tag_id" = $1  [["tag_id", 2]]
+  Rendered tags/_tag.html.erb (2.3ms)
+Completed 200 OK in 10ms (Views: 6.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:49:37 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/2"}
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_tags" ON "posts"."id" = "post_tags"."post_id" WHERE "post_tags"."tag_id" = $1  [["tag_id", 2]]
+  Rendered tags/_tag.html.erb (2.3ms)
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:49:39 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/1"}
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_tags" ON "posts"."id" = "post_tags"."post_id" WHERE "post_tags"."tag_id" = $1  [["tag_id", 1]]
+  Rendered tags/_tag.html.erb (3.0ms)
+Completed 200 OK in 10ms (Views: 6.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:49:40 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags"}
+  [1m[36mTag Load (0.5ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+  Rendered tags/_tags.html.erb (1.9ms)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:49:40 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags"}
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/_tags.html.erb (1.6ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:49:44 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_posts.html.erb (1.0ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:51:12 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:51:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:51:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:51:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:51:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:51:12 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:51:24 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:51:24 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:51:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:51:24 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:51:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:51:24 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 13:51:33 -0500
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-02 13:51:33 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-02 13:51:33 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-02 13:51:33 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-02 13:51:33 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-02 13:51:33 -0500
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:33 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts"}
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_posts.html.erb (2.0ms)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:35 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"comments"}
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered comments/_comments.html.erb (8.3ms)
+Completed 200 OK in 17ms (Views: 13.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:35 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"comments"}
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments"
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (2.1ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered comments/_comments.html.erb (12.4ms)
+Completed 200 OK in 19ms (Views: 13.7ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:35 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags"}
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+  Rendered tags/_tags.html.erb (1.3ms)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:35 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags"}
+  [1m[35mTag Load (1.3ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/_tags.html.erb (2.6ms)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:37 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/1"}
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_tags" ON "posts"."id" = "post_tags"."post_id" WHERE "post_tags"."tag_id" = $1  [["tag_id", 1]]
+  Rendered tags/_tag.html.erb (2.3ms)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:39 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/1"}
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1  [["post_id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/_post.html.erb (2.9ms)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:39 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/1"}
+  [1m[35mPost Load (2.1ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35mComment Load (1.9ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/_post.html.erb (6.6ms)
+Completed 200 OK in 17ms (Views: 10.0ms | ActiveRecord: 4.5ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:40 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/2"}
+  [1m[36mTag Load (0.5ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_tags" ON "posts"."id" = "post_tags"."post_id" WHERE "post_tags"."tag_id" = $1  [["tag_id", 2]]
+  Rendered tags/_tag.html.erb (2.1ms)
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:40 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/2"}
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_tags" ON "posts"."id" = "post_tags"."post_id" WHERE "post_tags"."tag_id" = $1  [["tag_id", 2]]
+  Rendered tags/_tag.html.erb (2.1ms)
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:41 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_posts.html.erb (1.3ms)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:41 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_posts.html.erb (1.1ms)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:42 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/2"}
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1  [["post_id", 2]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered posts/_post.html.erb (3.8ms)
+Completed 200 OK in 13ms (Views: 9.1ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:42 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/2"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mTag Load (3.9ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1  [["post_id", 2]]
+  Rendered posts/_post.html.erb (8.1ms)
+Completed 200 OK in 16ms (Views: 8.8ms | ActiveRecord: 4.6ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:43 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/4"}
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_tags" ON "posts"."id" = "post_tags"."post_id" WHERE "post_tags"."tag_id" = $1  [["tag_id", 4]]
+  Rendered tags/_tag.html.erb (1.8ms)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:43 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/4"}
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mPost Load (1.6ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_tags" ON "posts"."id" = "post_tags"."post_id" WHERE "post_tags"."tag_id" = $1  [["tag_id", 4]]
+  Rendered tags/_tag.html.erb (5.0ms)
+Completed 200 OK in 12ms (Views: 8.4ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:44 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/2"}
+  [1m[36mPost Load (0.8ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1  [["post_id", 2]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered posts/_post.html.erb (4.3ms)
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:44 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/2"}
+  [1m[35mPost Load (1.7ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1  [["post_id", 2]]
+  Rendered posts/_post.html.erb (4.0ms)
+Completed 200 OK in 13ms (Views: 8.3ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:44 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/5"}
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_tags" ON "posts"."id" = "post_tags"."post_id" WHERE "post_tags"."tag_id" = $1  [["tag_id", 5]]
+  Rendered tags/_tag.html.erb (2.4ms)
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:44 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/5"}
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_tags" ON "posts"."id" = "post_tags"."post_id" WHERE "post_tags"."tag_id" = $1  [["tag_id", 5]]
+  Rendered tags/_tag.html.erb (2.4ms)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:45 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/2"}
+  [1m[36mPost Load (4.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1  [["post_id", 2]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered posts/_post.html.erb (3.4ms)
+Completed 200 OK in 15ms (Views: 7.5ms | ActiveRecord: 4.7ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:45 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/2"}
+  [1m[35mPost Load (1.5ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mTag Load (0.5ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1  [["post_id", 2]]
+  Rendered posts/_post.html.erb (5.0ms)
+Completed 200 OK in 14ms (Views: 9.1ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:46 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/4"}
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_tags" ON "posts"."id" = "post_tags"."post_id" WHERE "post_tags"."tag_id" = $1  [["tag_id", 4]]
+  Rendered tags/_tag.html.erb (2.3ms)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:46 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/4"}
+  [1m[36mTag Load (2.1ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_tags" ON "posts"."id" = "post_tags"."post_id" WHERE "post_tags"."tag_id" = $1  [["tag_id", 4]]
+  Rendered tags/_tag.html.erb (2.2ms)
+Completed 200 OK in 12ms (Views: 6.4ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:47 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/2"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1  [["post_id", 2]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered posts/_post.html.erb (3.3ms)
+Completed 200 OK in 10ms (Views: 6.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:47 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/2"}
+  [1m[35mPost Load (0.6ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1  [["post_id", 2]]
+  Rendered posts/_post.html.erb (3.3ms)
+Completed 200 OK in 11ms (Views: 7.4ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:47 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/5"}
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_tags" ON "posts"."id" = "post_tags"."post_id" WHERE "post_tags"."tag_id" = $1  [["tag_id", 5]]
+  Rendered tags/_tag.html.erb (2.0ms)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:47 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"tags/5"}
+  [1m[36mTag Load (1.2ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_tags" ON "posts"."id" = "post_tags"."post_id" WHERE "post_tags"."tag_id" = $1  [["tag_id", 5]]
+  Rendered tags/_tag.html.erb (2.1ms)
+Completed 200 OK in 11ms (Views: 6.4ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:48 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"comments"}
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered comments/_comments.html.erb (5.1ms)
+Completed 200 OK in 13ms (Views: 9.5ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:48 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"comments"}
+  [1m[35mComment Load (0.5ms)[0m  SELECT "comments".* FROM "comments"
+  [1m[36mPost Load (1.1ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered comments/_comments.html.erb (15.9ms)
+Completed 200 OK in 23ms (Views: 18.6ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:49 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"comments/2"}
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT  "comments".* FROM "comments"  WHERE "comments"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered comments/_comment.html.erb (1.5ms)
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:49 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"comments/2"}
+  [1m[36mComment Load (0.7ms)[0m  [1mSELECT  "comments".* FROM "comments"  WHERE "comments"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (1.6ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered comments/_comment.html.erb (3.1ms)
+Completed 200 OK in 11ms (Views: 5.7ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:53 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1  [["post_id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/_post.html.erb (3.8ms)
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/fs/" for 127.0.0.1 at 2014-09-02 13:51:53 -0500
+Processing by FlyingSwitchController#async as */*
+  Parameters: {"fs"=>"posts/1"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "post_tags" ON "tags"."id" = "post_tags"."tag_id" WHERE "post_tags"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/_post.html.erb (4.7ms)
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 1.1ms)
