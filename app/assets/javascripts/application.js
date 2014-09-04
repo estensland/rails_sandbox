@@ -28,7 +28,9 @@ flyingSwitch = {
     $(document).on('click', '.fs-link', function(e){
       var clicked = this;
       var href = $(clicked).attr('href');
-      flyingSwitch.AJAXCall(href)
+      var method = $(clicked).attr('method');
+      if (method === undefined) {method = 'GET'}
+      flyingSwitch.AJAXCall(href, method)
     });
 
   },
@@ -36,13 +38,13 @@ flyingSwitch = {
   hashChange: function(){
     var hash = window.location.hash
     if (hash) {
-      this.AJAXCall(hash)
+      this.AJAXCall(hash, 'GET')
     }
   },
-  AJAXCall: function(path) {
+  AJAXCall: function(path, method) {
     if (path.match(/#\/_\//)) {
       var params = path.split('#/_/')[1];
-      $.post('/fs/', {fs: params}, function(partial){
+      $.post('/fs/', {fs: params, method: method}, function(partial){
         $('#flying-switch').html(partial);
       });
     }

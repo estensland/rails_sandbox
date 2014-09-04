@@ -2,6 +2,7 @@ class FlyingSwitchController < ActionController::Base
 
   def async
     fs = params[:fs]
+    method = params[:method]
     args = {}
 
     if fs.include?('?')
@@ -13,11 +14,23 @@ class FlyingSwitchController < ActionController::Base
       path = fs.split('/')
     end
     if path.length == 2
-      # show path
       model = path[0].singularize
-      id = path[1]
-      instance_variable_set("@#{model}", model.capitalize.constantize.find(id))
-      render :partial => "#{model.pluralize}/#{model}", layout: false
+      second = path[1]
+      case second
+      when /\d/
+        # show path
+        instance_variable_set("@#{model}", model.capitalize.constantize.find(second))
+        render :partial => "#{model.pluralize}/#{model}", layout: false
+      when 'new'
+        # new path
+        case method
+        when 'GET'
+          instance_variable_set("@#{model}", model.capitalize.constantize.new)
+          render :partial => "#{model.pluralize}/new_#{model}", layout: false
+        when 'POST'
+          # Save item
+        end
+      end
     elsif path.length == 3
       # Edit/Delete/New/Create
       model = path[0].singularize
@@ -25,8 +38,6 @@ class FlyingSwitchController < ActionController::Base
       action = path[2]
       case action
       when 'edit'
-
-      when 'new'
 
       end
     else
