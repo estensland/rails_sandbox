@@ -32,7 +32,6 @@ flyingSwitch = {
       if (method === undefined) {method = 'GET'}
       flyingSwitch.AJAXCall(href, method)
     });
-
   },
 
   hashChange: function(){
@@ -47,6 +46,14 @@ flyingSwitch = {
       $.post('/fs/', {fs: params, method: method}, function(partial){
         $('#flying-switch').html(partial);
       });
+    }
+    else if (path.match(/#\//)){
+      var url = path.split('#/')[1];
+      $.ajax({
+        type: method,
+        url: url,
+        success: function(partial){$('#flying-switch').html(partial);}
+      })
     }
   }
 }

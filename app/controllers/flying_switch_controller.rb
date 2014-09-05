@@ -27,12 +27,12 @@ class FlyingSwitchController < ActionController::Base
         when 'GET'
           instance_variable_set("@#{model}", model.capitalize.constantize.new)
           render :partial => "#{model.pluralize}/new_#{model}", layout: false
-        when 'POST'
+        # when 'POST'
           # Save item
         end
       end
     elsif path.length == 3
-      # Edit/Delete/New/Create
+      # Edit/Update
       model = path[0].singularize
       id = path[1]
       action = path[2]
