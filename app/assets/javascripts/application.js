@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+var hashChangeEnabled = true
 
 flyingSwitch = {
   setBindings: function() {
@@ -22,10 +23,13 @@ flyingSwitch = {
     })
 
     $(window).on('hashchange', function(e){
-      flyingSwitch.hashChange()
+      if (hashChangeEnabled ===true){
+        flyingSwitch.hashChange()
+      }
     })
 
     $(document).on('click', '.fs-link', function(e){
+      hashChangeEnabled = false
       var clicked = this;
       var href = $(clicked).attr('href');
       var method = $(clicked).attr('method');
@@ -45,6 +49,7 @@ flyingSwitch = {
       var params = path.split('#/_/')[1];
       $.post('/fs/', {fs: params, method: method}, function(partial){
         $('#flying-switch').html(partial);
+        hashChangeEnabled = true
       });
     }
     else if (path.match(/#\//)){
@@ -52,7 +57,10 @@ flyingSwitch = {
       $.ajax({
         type: method,
         url: url,
-        success: function(partial){$('#flying-switch').html(partial);}
+        success: function(partial){
+          $('#flying-switch').html(partial);
+          hashChangeEnabled = true;
+        }
       })
     }
   }

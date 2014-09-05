@@ -1,7 +1,6 @@
 class PostsController < ApplicationController
 
   def index
-      binding.pry
     @posts = Post.all
     if request.xhr?
       render partial: 'posts', layout: false
