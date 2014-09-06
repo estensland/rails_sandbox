@@ -2,7 +2,7 @@
 
 <% @comments.each do |comment| %>
   <p><%= comment.post.title %></p>
-  <a class='fs-link' href="/#/_/comments/<%=comment.id%>"><h3><%= comment.body %></h3></a>
+  <a class='fs-link' href="/#/posts/<%=comment.post_id%>/comments/<%=comment.id%>"><h3><%= comment.body %></h3></a>
   <br>
 <% end %>
 

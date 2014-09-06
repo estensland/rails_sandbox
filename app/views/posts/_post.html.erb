@@ -2,7 +2,7 @@
 <h3>Tags:</h3>
 <ul>
   <% @post.tags.each do |tag| %>
-    <a class='fs-link' href="/#/_/tags/<%=tag.id%>"><li><%= tag.name %></li></a>
+    <a class='fs-link' href="/#/tags/<%=tag.id%>"><li><%= tag.name %></li></a>
   <% end %>
 </ul>
 
@@ -10,6 +10,6 @@
 <h3>Comments:</h3>
 <ul>
   <% @post.comments.each do |comment| %>
-    <li><%= comment.body %></li>
+    <li><a class='fs-link' href="/#/posts/<%=@post.id%>/comments/<%=comment.id%>"><%= comment.body %></a></li>
   <% end %>
 </ul>
