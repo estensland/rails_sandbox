@@ -14,56 +14,64 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-var hashChangeEnabled = true
+var hashChangeEnabled = true;
 
 flyingSwitch = {
   setBindings: function() {
     $(document).on('ready', function(e){
-      flyingSwitch.hashChange()
-    })
+      flyingSwitch.hashChange();
+    });
 
     $(window).on('hashchange', function(e){
       if (hashChangeEnabled ===true){
-        flyingSwitch.hashChange()
+        flyingSwitch.hashChange();
       }
-    })
+    });
 
     $(document).on('click', '.fs-link', function(e){
-      hashChangeEnabled = false
+      hashChangeEnabled = false;
       var clicked = this;
       var href = $(clicked).attr('href');
+      var root = flyingSwitch.grabRoot();
       var method = $(clicked).attr('method');
-      if (method === undefined) {method = 'GET'}
-      flyingSwitch.AJAXCall(href, method)
+      if (method === undefined) {method = 'GET';}
+      flyingSwitch.AJAXCall(href, root, method);
     });
   },
 
+  grabRoot: function(){
+    $('#flying-switch').attr('root');
+  },
+
   hashChange: function(){
-    var hash = window.location.hash
+    var hash = window.location.hash;
+    var root = flyingSwitch.grabRoot();
     if (hash) {
-      this.AJAXCall(hash, 'GET')
+      this.AJAXCall(hash, root, 'GET');
     }
   },
-  AJAXCall: function(path, method) {
+
+  AJAXCall: function(path, root, method) {
     if (path.match(/#\/_\//)) {
       var params = path.split('#/_/')[1];
       $.post('/fs/', {fs: params, method: method}, function(partial){
         $('#flying-switch').html(partial);
-        hashChangeEnabled = true
+        hashChangeEnabled = true;
       });
     }
     else if (path.match(/#\//)){
-      var url = path.split('#/')[1];
+      var path = path.split('#')[1];
+      if (root){path = root + path;}
       $.ajax({
         type: method,
-        url: url,
+        url: path,
         success: function(partial){
           $('#flying-switch').html(partial);
           hashChangeEnabled = true;
         }
-      })
+      });
     }
   }
-}
+};
 
-flyingSwitch.setBindings()
+flyingSwitch.setBindings();

@@ -10,6 +10,6 @@
 <h3>Comments:</h3>
 <ul>
   <% @post.comments.each do |comment| %>
-    <li><a class='fs-link' href="/#/posts/<%=@post.id%>/comments/<%=comment.id%>"><%= comment.body %></a></li>
+    <li><a class='fs-link' href="#/posts/<%=@post.id%>/comments/<%=comment.id%>"><%= comment.body %></a></li>
   <% end %>
 </ul>
